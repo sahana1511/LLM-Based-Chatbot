@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%); /* Ombre gradient background */
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 50px 40px;
+            border-radius: 20px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            max-width: 600px;
+            width: 90%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        header {
+            font-size: 3em;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        p.description {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        .redirect-button {
+            background-color: #9cd8ea;
+            color: white;
+            border: none;
+            padding: 15px 50px;
+            font-size: 22px;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .redirect-button:hover {
+            background-color: #9cd8ea;
+            transform: scale(1.05);
+        }
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container fade-in">
+        <header>Welcome to My Site</header>
+        <p class="description">Click the button below to Explore Groq </p>
+        <a href="https://fff259c5f43b113744.gradio.live/" class="redirect-button" target="_blank">Go to Link</a>
+    </div>
+</body>
+</html>
